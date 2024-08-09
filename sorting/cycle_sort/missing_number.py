@@ -24,6 +24,20 @@ def missing_number(arr: list[int]):
     return len(arr)
 
 
+def missing_number2(arr: list[int]):
+    size = len(arr)
+    total = (size * (size + 1)) // 2
+    missing = total - sum(arr)
+    return missing
+
+
+def missing_number3(arr: list[int]):
+    size = len(arr)
+    for i in range(0, size + 1):
+        if i not in arr:
+            return i
+
+
 if __name__ == "__main__":
     arr = [3, 4, 2, 0]
     print(missing_number(arr))
