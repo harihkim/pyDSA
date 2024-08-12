@@ -1,4 +1,4 @@
-def cycleSort(arr: list[int]):
+def cycleSort2(arr: list[int]):
     i = 0
     while i < len(arr):
         if arr[i] != i + 1:
@@ -18,7 +18,7 @@ def cycleSort1(arr: list[int]):
             arr[temp - 1] = temp
 
 
-def cycleSort2(arr: list[int]):
+def cycleSort(arr: list[int]):
     i = 0
     while i < len(arr):
         correctIndex = arr[i] - 1
